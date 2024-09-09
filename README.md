@@ -1,0 +1,2 @@
+# Exercício Aula 04 - 30/08. Fiz uma lista dos meus 04 animes favoritos atualmente. Para cada anime, adicionei uma imagem e a sinopse.
+# Exercício Aula 05 - 06/09. Atualização do menu, das divs e fonte google
