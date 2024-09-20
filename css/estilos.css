@@ -8,70 +8,97 @@
 body {
     background-color: darkgrey;
     opacity: 0.7;
+    overflow-x: hidden;
 }
 
 #container {
-    width: 90%;
+    width: 100%;
     margin: auto;
 
 }
-#header, #nav, #content {
+header, nav, main {
     float: left;
 }
-#header {
-    height: 200px;
-    text-align: center;
+header {
+    height: 150px;
     width: 100%;
-    margin-bottom: 2%;
-    background-color: cornflowerblue;
-    opacity: 0.7;
+    margin-bottom: 1%;
+    background-color: #fff;
+    background-image: url("../img/icone_naruto.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
     font-family: "Reddit Sans Condensed", sans-serif;
     /* background-color: rgb(100,250,225); */
 }
-#header img {
+header img {
     width: 150px;
 }
-#header #direita, #header #esquerda {
+header #esquerda {
   float: left;
   width: 50%;
   text-align: center;
   margin-top: 5%;
 }
-#header #esquerda {
-    margin-top: 5%;
-}
-#nav, #content {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-#nav {
-  width: 20%;
-  margin-right: 1%;
+header #direita {
   float: left;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 3%;
 }
-#content {
+nav {
+  width: 19%;
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  font-family: "Ubuntu", sans-serif;
+}
+main {
     float: left;
-    width: 75%;
+    width: 74%;
     padding: 2%;
     text-align: justify;
     font-family: "Reddit Sans Condensed", sans-serif;
     background-color: white;
 }
-#content h3 {
-    margin-bottom: 2%;
+main h2, h3 {
+  margin-bottom: 1%;
 }
-#nav ul {
+main section {
+  margin-bottom: 1.5%;
+}
+main article {
+  margin-bottom: 1%;
+}
+main p{
+  color: black;
+  font-size: 12pt;
+  font-weight: normal;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-decoration: none;
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);*/
+}
+nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     background-color: white;
   }
-  #nav li a {
+  nav li a {
     display: block;
     color: black;
     text-decoration: none;
     padding: 10px;
   }
-  #nav li a:hover {
+  nav li a:hover {
     background-color: #333;
     color: #fff
   }
@@ -79,14 +106,89 @@ body {
     background-color: blue;
     opacity: 0.7;
   }
-  #nav .active a {
+  nav .active a {
     color: white;
     /* faz com que mude a cor do texto do menu selecionado */
   }
-  #content #direita, #content #esquerda {
+ footer {
+  float: left;
+  width: 100%;
+  background-color: aliceblue;
+  color: black;
+  height: 100px;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* o justify-content e o align-items dependem do display:flex */
+ }
+ .tabela1 {
+  width: 100%;
+  text-align: center;
+}
+.tabela1, .tabela1 th, .tabela1 td{
+  border: 1px solid black; /* solid = contínua; dashed = tracejada */
+  border-collapse: collapse; /* junta as bordas */
+}
+.tabela1 th, .tabela1 td {
+  padding: 5px;
+}
+.tabela1 tr:nth-child(even){ /* esse comando vai pintar as linhas ímpares ou pares da tabela */
+  background-color: blue;
+  opacity: 0.7;
+  color: white;
+  font-weight: bold;
+}
+.tabela1 tr:hover { /* pinta a linha que o mouse fica em cima */
+  background-color:cadetblue;
+}
+.tabela1 th {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  input[type = "text"], input[type = "email"], input[type = "date"], input[type = "number"], select, textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14pt;
+  } 
+  button {
+    width: 10%;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    font-size: 16pt;
+    border: black solid;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  button:hover {
+    background-color: blue;
+    opacity: 0.7;
+    font-weight: bold;
+  }
+  .gruporadio, .grupocheck {
+    margin-bottom: 15px;
+  }
+  .gruporadio label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  textarea {
+    resize: none;
+  }
+  main #esquerda, main #direita {
   float: left;
   width: 50%;
-  text-align: center;
   margin-top: 5%;
   text-align: justify;
   }

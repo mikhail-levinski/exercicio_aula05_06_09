@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto exemplo para a aula de DW">
+    <meta name="keywords" content="aula, html, css, exemplo site">
+    <title>Exercício Aula 07</title>
+    <link rel = "stylesheet" href = "css/estilos.css">
+    <link rel = "shortcut icon" href = "img/icone.png" type = "image/png">
+</head>
+<body>
+    <div id = "container">
+        <header>
+            <div id = "esquerda">
+                <h1>Meu Top 4 Animes</h1>
+            </div>
+            <div id = "direita">
+                <a href = "index.html">
+                <img src = "img/header.jpg" alt = "imagem header">
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href = "index.html" title = "acesse a página inicial">
+                        Página Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href = "page2.html" title = "Naruto">
+                        Naruto
+                    </a>
+                </li>
+                <li>
+                    <a href = "page3.html" title = "Re:Zero">
+                        Re:Zero
+                    </a>
+                </li>
+                <li>
+                    <a href = "page4.html" title = "Shingeki no Kyojin">
+                        Shingeki no Kyojin
+                    </a>
+                </li>
+                <li>
+                    <a href = "page5.html" title = "Kimetsu no Yaiba">
+                        Kimetsu no Yaiba
+                    </a>
+                </li>
+                <li class = "active">
+                    <a href = "pesquisa.html" title = "pesquisa">
+                        Pesquisa
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Pesquisa</h2>
+                <form action = "#" method = "post" id = "form" name = "form">
+                    <label for = "txtnome">Nome</label>
+                    <input type = "text" name = "txtnome" id = "txtnome" placeholder = "Digite seu nome aqui" required> <br>
+                    <label for = "txtemail">Email</label>
+                    <input type = "email" name = "txtemail" id = "txtemail" placeholder = "Digite seu email aqui" required> <br>
+                    <label for = "txtdata">Data de Nascimento</label>
+                    <input type = "date" name = "txtdata" id = "txtdata" required>
+                    <br>
+                    <label for = "estado">Estado</label>
+                    <select name = "estado" id = "estado" required>
+                        <option disabled selected>Escolha seu Estado</option>
+                        <option value = "sp">São Paulo</option>
+                        <option value = "rj">Rio de Janeiro</option>
+                        <option value = "mg">Minas Gerais</option>
+                        <option value = "es">Espírito Santo</option>
+                        <option value = "outro">Outro</option>
+                    </select>
+                    <br>
+                    <label>Estado Civil</label>
+                    <div class = "gruporadio">
+                        <label for = "solteiro">
+                            <input type = "radio" name = "estadocivil" id = "solteiro" value = "solteiro" required> Solteiro
+                        </label>
+                        <label for = "casado">
+                            <input type = "radio" name = "estadocivil" id = "casado" value = "casado" required> Casado
+                        </label>
+                        <label for = "divorciado">
+                            <input type = "radio" name = "estadocivil" id = "divorciado" value = "divorciado" required> Divorciado
+                        </label>
+                        <label for = "viuvo">
+                            <input type = "radio" name = "estadocivil" id = "viuvo" value = "viuvo" required> Viúvo
+                        </label>
+                        <label for = "outro">
+                            <input type = "radio" name = "estadocivil" id = "outro" value = "outro" required> Outro
+                        </label>
+                    </div>
+                    <label for = "pesquisa">Quais seus animes favoritos?</label>
+                    <textarea name = "pesquisa" id = "pesquisa" rows = "4" placeholder = "Digite aqui seus animes favoritos"></textarea>
+                    <div class = "grupocheck">
+                        <label for = "termos">
+                            <input type = "checkbox" name = "termos" id = "termos">
+                            Aceito os termos e condições
+                        </label>
+                    </div>
+                    <br>
+                    <button type = "submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        </div>
+        <footer>
+            <p>&copy; 2024. Mikhail Levinski. Todos os direitos reservados</p>
+        </footer>
+</body>
+</html>

@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto exemplo para a aula de DW">
     <meta name="keywords" content="aula, html, css, exemplo site">
-    <title>Exercício Aula 05</title>
+    <title>Exercício Aula 07</title>
     <link rel = "stylesheet" href = "css/estilos.css">
     <link rel = "shortcut icon" href = "img/icone.png" type = "image/png">
 </head>
 <body>
     <div id = "container">
-        <div id = "header">
+        <header>
             <div id = "esquerda">
-            <h1>Meu Top 4 Animes</h1>
-        </div>
-        <div id = "direita">
-            <a href = "index.html">
+                <h1>Meu Top 4 Animes</h1>
+            </div>
+            <div id = "direita">
+                <a href = "index.html">
                 <img src = "img/header.jpg" alt = "imagem header">
                 </a>
-        </div>
-        </div>
-    <div id = "nav">
+            </div>
+        </header>
+        <nav>
             <ul>
-                
                 <li class = "active">
                     <a href = "index.html" title = "acesse a página inicial">
                         Página Inicial
@@ -49,16 +48,55 @@
                         Kimetsu no Yaiba
                     </a>
                 </li>
-
+                <li>
+                    <a href = "pesquisa.html" title = "pesquisa">
+                        Pesquisa
+                    </a>
+                </li>
             </ul>
-
-        </div>
-     <div id = "content">
-            <h3>Página Inicial</h3> <br>
-            <p>Seja bem-vindo</p>
-            <p>Neste exercício, irei apresentar meus 4 animes favoritos atualmente. Irei colocar uma imagem para cada anime, bem como sua sinopse.</p>
-        </div>
-        </div>
-
+        </nav>
+        <main>
+            <section>
+                <h2>Página Inicial</h2> <br>
+                <p>Seja bem-vindo!</p> <br>
+                <p>Neste exercício irei apresentar meus 4 animes favoritos atualmente. Irei colocar uma imagem para cada anime, bem como sua sinopse.</p> <br>
+            </section>
+            <article class = "esquerda">
+                <h3>Minha história com animes</h3>
+                <p>Comecei a assistir animes apenas em 2018. Antes disso, tinha tido contato apenas com aqueles animes clássicos que passavam na TV Globinho - Dragon Ball, Inuyasha, Yu-Gi-Oh!, Avatar, etc.
+                    Em 2018 comecei a trabalhar em outra cidade e, no caminho até lá, dentro do ônibus, usava muito as redes sociais. Foi quando uma amiga começou a postar sobre Naruto e eu acabei me interessando sobre o anime. Então baixei episódios para assistir no celular durante a viagem e fui ficando cada vez mais entretido com o anime. Terminei a primeira temporada em questão de dias e logo terminei o anime todo. Desde então, comecei a assistir mais e mais animes e não parei mais.
+                </p>
+            </article>
+            <article class = "direita">
+                <h3>Os 4 animes que mais gosto em ordem</h3> <br>
+                <table class = "tabela1">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Anime</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>01</td>
+                        <td>Naruto</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Re:Zero</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Shingeki no Kyojin</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Kimetsu no Yaiba</td>
+                    </tr>
+                </table>
+            </article>
+    </div>
+    <footer>
+        <p>&copy; 2024. Mikhail Levinski. Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
